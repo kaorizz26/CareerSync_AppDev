@@ -1,0 +1,11 @@
+# 1. IGNORE the Virtual Environment
+prototype/venv/
+
+# 2. Ignore Python cache and system files
+__pycache__/
+*.pyc
+.DS_Store
+
+# 3. Ignore sensitive data/logs
+*.env
+*.log
