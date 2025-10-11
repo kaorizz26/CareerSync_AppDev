@@ -1,16 +1,33 @@
-### Step 2.1: Clone the Repository
-Open your terminal or command prompt and clone the project:
-command:
-git clone [https://github.com/kaorizz26/CareerSync_AppDev.git](https://github.com/kaorizz26/CareerSync_AppDev.git)
-cd CareerSync_AppDev/prototype
+# Project Quick Start Guide
 
-Step 2.3: Activate the Virtual Environment
-You must activate the environment every time you start working on the project.
-command: .\venv\Scripts\Activate ```
+This guide assumes you are starting from your machine's general command line or terminal.
 
-### Step 2.4: Install Dependencies
-With the environment activated, install all necessary libraries listed in requirements.txt:
-command: pip install -r requirements.txt
+### 1. Clone and Navigate 🧭
 
-### For running the applicaton:
-command: python app.py
+Download the project files from GitHub and move into the correct directory where the setup files are located.
+
+| Step | Command | Resulting Directory |
+| :--- | :--- | :--- |
+| **Clone** | `git clone https://github.com/kaorizz26/CareerSync_AppDev.git` | `CareerSync_AppDev/` |
+| **Navigate** | `cd CareerSync_AppDev/prototype` | `CareerSync_AppDev/prototype/` |
+
+---
+
+### 2. Virtual Environment & Dependencies 🛠️
+
+Ensure your virtual environment is active before installing dependencies.
+
+| Step | Command | Purpose |
+| :--- | :--- | :--- |
+| **Activate venv (Windows)** | `.\venv\Scripts\Activate` | Activates the environment. *(For macOS/Linux, use `source venv/bin/activate`)* |
+| **Install** | `pip install -r requirements.txt` | Installs all required project libraries. |
+
+---
+
+### 3. Run the Application 🚀
+
+After setting your required **`GROQ_API_KEY` environment variable** (as instructed separately), you can launch the application.
+
+| Step | Command | Result |
+| :--- | :--- | :--- |
+| **Execute** | `python app.py` | Starts the Flask web server. |
