@@ -1,0 +1,37 @@
+{
+  "name": "Christine Mae Bautista",
+  "email": "christinemae.designs@gmail.com",
+  "target_title": "Creative Graphic Designer",
+  "total_years_experience": 4,
+  "skills": [
+    "Adobe Photoshop",
+    "Adobe Illustrator",
+    "Adobe InDesign",
+    "Canva",
+    "Adobe Premiere Pro",
+    "CapCut",
+    "After Effects",
+    "Branding",
+    "Illustration",
+    "Typography",
+    "Photography"
+  ],
+  "work_history": [
+    {
+      "company": "Creative Avenue Studio",
+      "title": "Graphic Designer",
+      "start_date": "2021-04",
+      "end_date": "Present"
+    },
+    {
+      "company": "Freelance Graphic Designer",
+      "title": "Freelance Graphic Designer",
+      "start_date": "2019-01",
+      "end_date": "2021-03"
+    }
+  ],
+  "education": {
+    "degree": "Bachelor of Fine Arts in Advertising Arts",
+    "institution": "University of Mindanao \u2013 Davao City"
+  }
+}

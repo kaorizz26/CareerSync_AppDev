@@ -3,16 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CareerSync - Upload Resume</title>
+    <style>
+        :root {
+            --primary-green: #04AA6D; /* A modern, professional green */
+            --light-green: #f0fdf7;
+            --white: #ffffff;
+            --light-grey: #f4f4f4;
+            --medium-grey: #e0e0e0;
+            --dark-grey: #333333;
+            --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background-color: var(--light-grey);
+            color: var(--dark-grey);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: var(--white);
+            border-bottom: 1px solid var(--medium-grey);
+            padding: 1rem 2rem;
+            width: 100%;
+            box-sizing: border-box; /* Ensures padding doesn't add to width */
+        }
+
+        header h1 {
+            margin: 0;
+            color: var(--primary-green);
+            font-size: 1.5rem;
+        }
+
+        .container {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .upload-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            padding: 2.5rem;
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .upload-card h2 {
+            margin-top: 0;
+            font-weight: 600;
+        }
+
+        .upload-card p {
+            color: #555;
+            margin-bottom: 2rem;
+        }
+
+        /* Custom File Input */
+        .file-input-wrapper {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            border: 2px dashed var(--medium-grey);
+            border-radius: 8px;
+            padding: 2rem;
+            width: 90%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .file-input-wrapper:hover {
+            border-color: var(--primary-green);
+            background-color: var(--light-green);
+        }
+
+        .file-input-wrapper input[type=file] {
+            font-size: 100px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .file-input-label {
+            color: #555;
+            font-weight: 500;
+        }
+
+        /* Upload Button */
+        .btn-submit {
+            background-color: var(--primary-green);
+            color: var(--white);
+            border: none;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 90%;
+            margin-top: 2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-submit:hover {
+            background-color: #038c5a;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome</h1><br>
 
-    <h4>Upload your resume:</h4>
-    <form method="POST" action="/file_upload" enctype="multipart/form-data">
-        <input type="file" name="myfile"><br>
-        <button type="submit">Upload</button>
-    </form>
+    <header>
+        <h1>CareerSync</h1>
+    </header>
+
+    <div class="container">
+        <div class="upload-card">
+            <h2>Get Started</h2>
+            <p>Upload your PDF resume to find personalized job matches and skill analysis.</p>
+
+            <form method="POST" action="/file_upload" enctype="multipart/form-data">
+                <div class="file-input-wrapper">
+                    <input type="file" name="myfile" id="myfile" required>
+                    <label for="myfile" class="file-input-label" id="file-label">
+                        Click to browse or drag & drop PDF
+                    </label>
+                </div>
+                <br>
+                <button type="submit" class="btn-submit">Upload and Analyze</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Optional: Show the selected filename
+        const fileInput = document.getElementById('myfile');
+        const fileLabel = document.getElementById('file-label');
+        fileInput.addEventListener('change', () => {
+            if (fileInput.files.length > 0) {
+                fileLabel.textContent = fileInput.files[0].name;
+            }
+        });
+    </script>
 
 </body>
 </html>
