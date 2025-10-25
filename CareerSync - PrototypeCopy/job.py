@@ -8,7 +8,7 @@ pd.set_option('display.max_colwidth', None)
 
 jobs = scrape_jobs(
     site_name=['LinkedIn'],
-    search_term='Python Developer',
+    search_term='Python Data Analysis Machine Learning',
     
     location='Philippines, Manila',
     results_limit=10

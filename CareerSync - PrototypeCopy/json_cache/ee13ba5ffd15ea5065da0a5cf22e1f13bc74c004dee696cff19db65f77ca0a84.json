@@ -1,0 +1,38 @@
+{
+  "name": "Paolo Ramirez",
+  "email": "paolo.ramirez.analytics@gmail.com",
+  "target_title": "Business Analyst",
+  "total_years_experience": 3,
+  "skills": [
+    "SQL",
+    "Excel",
+    "Power BI",
+    "Tableau",
+    "MySQL",
+    "PostgreSQL",
+    "Python",
+    "Pandas",
+    "Matplotlib",
+    "Jira",
+    "Trello",
+    "Google Workspace"
+  ],
+  "work_history": [
+    {
+      "company": "Visayas Trade Corporation",
+      "title": "Business Analyst",
+      "start_date": "2021-06",
+      "end_date": "Present"
+    },
+    {
+      "company": "Smart Communications",
+      "title": "Data Analyst",
+      "start_date": "2020-01",
+      "end_date": "2020-04"
+    }
+  ],
+  "education": {
+    "degree": "Bachelor of Science in Business Administration, Major in Management",
+    "institution": "University of San Carlos \u2013 Cebu City"
+  }
+}

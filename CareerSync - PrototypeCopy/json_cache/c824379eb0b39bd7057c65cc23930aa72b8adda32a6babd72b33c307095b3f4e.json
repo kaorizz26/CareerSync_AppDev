@@ -1,0 +1,38 @@
+{
+  "name": "Maria Angelica Santos",
+  "email": "maria.santos.dev@gmail.com",
+  "target_title": "Web Developer",
+  "total_years_experience": 2,
+  "skills": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React.js",
+    "Node.js",
+    "Express.js",
+    "PHP",
+    "MySQL",
+    "MongoDB",
+    "Git",
+    "Figma",
+    "Visual Studio Code"
+  ],
+  "work_history": [
+    {
+      "company": "PixelForge Digital Agency",
+      "title": "Web Developer",
+      "start_date": "2022-09",
+      "end_date": "Present"
+    },
+    {
+      "company": "CodeLab Solutions",
+      "title": "Intern \u2013 Junior Web Developer",
+      "start_date": "2022-02",
+      "end_date": "2022-05"
+    }
+  ],
+  "education": {
+    "degree": "Bachelor of Science in Information Technology",
+    "institution": "Polytechnic University of the Philippines \u2013 Sta. Mesa"
+  }
+}
